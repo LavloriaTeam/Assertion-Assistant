@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Dictionary\Advices.cs" />
     <Compile Include="Dictionary\Affirmations.cs" />
+    <Compile Include="JsonData\userNote.cs" />
     <Compile Include="MainForms\HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>

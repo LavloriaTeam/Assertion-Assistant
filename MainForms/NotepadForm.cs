@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Assertion_Assistant.JsonData;
+using Newtonsoft.Json;
 
 namespace Assertion_Assistant.MainForms
 {
@@ -15,6 +18,37 @@ namespace Assertion_Assistant.MainForms
         public NotepadForm()
         {
             InitializeComponent();
+        }
+
+        // main
+
+        private void NotepadForm_Load(object sender, EventArgs e)
+        {
+            if (File.Exists("userData\\userNote.json"))
+            {
+                string input = File.ReadAllText("userData\\userNote.json");
+                var output = JsonConvert.DeserializeObject<userNote>(input);
+                materialRichTextBox1.Text = output.Note;
+                lastDataLabel.Text = output.LastEditData;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            materialRichTextBox1.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            userNote un = new userNote();
+            DateTime thisDay = DateTime.Today;
+
+
+            un.Note = materialRichTextBox1.Text;
+            un.LastEditData = thisDay.ToString();
+
+            var output = JsonConvert.SerializeObject(un);
+            File.WriteAllText("userData\\userNote.json", output);
         }
     }
 }

@@ -49,5 +49,15 @@ namespace Assertion_Assistant
             panel2.Controls.Add(myForm);
             myForm.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            HomeForm myForm = new HomeForm();
+            myForm.TopLevel = false;
+            myForm.AutoScroll = true;
+            panel2.Controls.Add(myForm);
+            myForm.Show();
+        }
     }
 }
