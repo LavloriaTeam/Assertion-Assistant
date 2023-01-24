@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assertion_Assistant.Translations
 {
-    internal class Dict
+    internal class Translation
     {
         Dictionary<string, string> russianWelcomeForm = new Dictionary<string, string>()
         {

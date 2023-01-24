@@ -16,3 +16,6 @@ D:\Projects\C#\Assertion-Assistant\bin\Debug\ReaLTaiizor.xml
 D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.MainPage.resources
 D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.WelcomeForm.resources
 D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion-Assistant.csproj.CopyComplete
+D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.HelpForms.Notify.resources
+D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.MainForms.HomeForm.resources
+D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.MainForms.NotepadForm.resources

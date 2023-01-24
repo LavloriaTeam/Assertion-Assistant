@@ -61,10 +61,24 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HelpForms\Notify.cs">
+    <Compile Include="Dictionary\Advices.cs" />
+    <Compile Include="Dictionary\Affirmations.cs" />
+    <Compile Include="MainForms\HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HelpForms\Notify.Designer.cs">
+    <Compile Include="MainForms\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\NotepadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\NotepadForm.Designer.cs">
+      <DependentUpon>NotepadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechForms\Notify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechForms\Notify.Designer.cs">
       <DependentUpon>Notify.cs</DependentUpon>
     </Compile>
     <Compile Include="JsonData\userProfile.cs" />
@@ -74,7 +88,7 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Translations\Dict.cs" />
+    <Compile Include="Dictionary\Translation.cs" />
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,7 +97,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="HelpForms\Notify.resx">
+    <EmbeddedResource Include="MainForms\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\NotepadForm.resx">
+      <DependentUpon>NotepadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechForms\Notify.resx">
       <DependentUpon>Notify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
@@ -116,8 +136,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="HelpClasses\" />
-    <Folder Include="Tools\" />
+    <Folder Include="TechClasses\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
