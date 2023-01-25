@@ -58,16 +58,16 @@
             this.panel2.Controls.Add(this.lastDataLabel);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(6, 292);
+            this.panel2.Location = new System.Drawing.Point(0, 286);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(742, 55);
+            this.panel2.Size = new System.Drawing.Size(756, 61);
             this.panel2.TabIndex = 3;
             // 
             // lastDataLabel
             // 
             this.lastDataLabel.Depth = 0;
             this.lastDataLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lastDataLabel.Location = new System.Drawing.Point(425, 20);
+            this.lastDataLabel.Location = new System.Drawing.Point(437, 23);
             this.lastDataLabel.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.lastDataLabel.Name = "lastDataLabel";
             this.lastDataLabel.Size = new System.Drawing.Size(145, 23);
@@ -95,13 +95,14 @@
             this.materialRichTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialRichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialRichTextBox1.Depth = 0;
+            this.materialRichTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.materialRichTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialRichTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialRichTextBox1.Hint = "";
-            this.materialRichTextBox1.Location = new System.Drawing.Point(6, -1);
+            this.materialRichTextBox1.Location = new System.Drawing.Point(0, 0);
             this.materialRichTextBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialRichTextBox1.Name = "materialRichTextBox1";
-            this.materialRichTextBox1.Size = new System.Drawing.Size(742, 287);
+            this.materialRichTextBox1.Size = new System.Drawing.Size(756, 286);
             this.materialRichTextBox1.TabIndex = 4;
             this.materialRichTextBox1.Text = "";
             // 
@@ -110,7 +111,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(870, 404);
+            this.ClientSize = new System.Drawing.Size(756, 347);
             this.Controls.Add(this.materialRichTextBox1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

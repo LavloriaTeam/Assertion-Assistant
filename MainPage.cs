@@ -59,5 +59,35 @@ namespace Assertion_Assistant
             panel2.Controls.Add(myForm);
             myForm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            MusicForm myForm = new MusicForm();
+            myForm.TopLevel = false;
+            myForm.AutoScroll = true;
+            panel2.Controls.Add(myForm);
+            myForm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            ProfileForm myForm = new ProfileForm();
+            myForm.TopLevel = false;
+            myForm.AutoScroll = true;
+            panel2.Controls.Add(myForm);
+            myForm.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            GoalsForm myForm = new GoalsForm();
+            myForm.TopLevel = false;
+            myForm.AutoScroll = true;
+            panel2.Controls.Add(myForm);
+            myForm.Show();
+        }
     }
 }

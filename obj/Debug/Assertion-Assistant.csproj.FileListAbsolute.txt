@@ -19,3 +19,8 @@ D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion-Assistant.csproj.CopyComp
 D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.HelpForms.Notify.resources
 D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.MainForms.HomeForm.resources
 D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.MainForms.NotepadForm.resources
+D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.MainForms.MusicForm.resources
+D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.MainForms.ProfileForm.resources
+D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.MainForms.GoalsForm.resources
+D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.MainForms.QuotesForm.resources
+D:\Projects\C#\Assertion-Assistant\obj\Debug\Assertion_Assistant.TechForms.CreateNewGoal.resources

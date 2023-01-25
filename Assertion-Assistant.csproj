@@ -63,18 +63,50 @@
   <ItemGroup>
     <Compile Include="Dictionary\Advices.cs" />
     <Compile Include="Dictionary\Affirmations.cs" />
+    <Compile Include="JsonData\userGoal.cs" />
+    <Compile Include="JsonData\userImage.cs" />
     <Compile Include="JsonData\userNote.cs" />
+    <Compile Include="MainForms\GoalsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\GoalsForm.Designer.cs">
+      <DependentUpon>GoalsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForms\HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForms\HomeForm.Designer.cs">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForms\MusicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\MusicForm.Designer.cs">
+      <DependentUpon>MusicForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForms\NotepadForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForms\NotepadForm.Designer.cs">
       <DependentUpon>NotepadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\ProfileForm.Designer.cs">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\QuotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\QuotesForm.Designer.cs">
+      <DependentUpon>QuotesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechForms\CreateNewGoal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechForms\CreateNewGoal.Designer.cs">
+      <DependentUpon>CreateNewGoal.cs</DependentUpon>
     </Compile>
     <Compile Include="TechForms\Notify.cs">
       <SubType>Form</SubType>
@@ -98,11 +130,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForms\GoalsForm.resx">
+      <DependentUpon>GoalsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForms\HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\MusicForm.resx">
+      <DependentUpon>MusicForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForms\NotepadForm.resx">
       <DependentUpon>NotepadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\ProfileForm.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\QuotesForm.resx">
+      <DependentUpon>QuotesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechForms\CreateNewGoal.resx">
+      <DependentUpon>CreateNewGoal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TechForms\Notify.resx">
       <DependentUpon>Notify.cs</DependentUpon>
