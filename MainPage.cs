@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Assertion_Assistant.MainForms;
+using Assertion_Assistant.HelpForms;
+using Assertion_Assistant.TechClasses;
 
 namespace Assertion_Assistant
 {
@@ -68,6 +70,9 @@ namespace Assertion_Assistant
             myForm.AutoScroll = true;
             panel2.Controls.Add(myForm);
             myForm.Show();
+
+            NotifyVac nf = new NotifyVac();
+            nf.showNotify("in development");
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -88,6 +93,12 @@ namespace Assertion_Assistant
             myForm.AutoScroll = true;
             panel2.Controls.Add(myForm);
             myForm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            NotifyVac nf = new NotifyVac();
+            nf.showNotify("in development");
         }
     }
 }

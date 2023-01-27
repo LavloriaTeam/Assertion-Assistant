@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
-            this.materialLabel1 = new ReaLTaiizor.Controls.MaterialLabel();
             this.button1 = new ReaLTaiizor.Controls.Button();
+            this.materialLabel1 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.materialLabel2 = new ReaLTaiizor.Controls.MaterialLabel();
             this.airForm1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -38,6 +39,7 @@
             // 
             this.airForm1.BackColor = System.Drawing.Color.White;
             this.airForm1.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.airForm1.Controls.Add(this.materialLabel2);
             this.airForm1.Controls.Add(this.button1);
             this.airForm1.Controls.Add(this.materialLabel1);
             this.airForm1.Customization = "AAAA/1paWv9ycnL/";
@@ -59,17 +61,6 @@
             this.airForm1.Transparent = false;
             this.airForm1.Click += new System.EventHandler(this.airForm1_Click);
             // 
-            // materialLabel1
-            // 
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(25, 39);
-            this.materialLabel1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(421, 116);
-            this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "text";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -88,6 +79,29 @@
             this.button1.TextAlignment = System.Drawing.StringAlignment.Center;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(25, 39);
+            this.materialLabel1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(421, 116);
+            this.materialLabel1.TabIndex = 0;
+            this.materialLabel1.Text = "text";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Location = new System.Drawing.Point(3, 200);
+            this.materialLabel2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(101, 21);
+            this.materialLabel2.TabIndex = 2;
+            this.materialLabel2.Text = "notifyVacV1";
+            this.materialLabel2.Click += new System.EventHandler(this.materialLabel2_Click);
+            // 
             // Notify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,9 +109,11 @@
             this.ClientSize = new System.Drawing.Size(480, 221);
             this.Controls.Add(this.airForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(112, 35);
             this.Name = "Notify";
             this.Text = "Notify";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.Load += new System.EventHandler(this.Notify_Load);
             this.airForm1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -108,5 +124,6 @@
         private ReaLTaiizor.Forms.AirForm airForm1;
         private ReaLTaiizor.Controls.Button button1;
         private ReaLTaiizor.Controls.MaterialLabel materialLabel1;
+        private ReaLTaiizor.Controls.MaterialLabel materialLabel2;
     }
 }

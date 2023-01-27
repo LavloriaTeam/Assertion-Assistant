@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,6 +26,16 @@ namespace Assertion_Assistant.HelpForms
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Notify_Load(object sender, EventArgs e)
+        {
+            materialLabel1.Text = File.ReadAllText("userData\\notify.txt");
+        }
+
+        private void materialLabel2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

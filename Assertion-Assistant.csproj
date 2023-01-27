@@ -102,6 +102,7 @@
     <Compile Include="MainForms\QuotesForm.Designer.cs">
       <DependentUpon>QuotesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TechClasses\NotifyVac.cs" />
     <Compile Include="TechForms\CreateNewGoal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,8 +184,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TechClasses\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
