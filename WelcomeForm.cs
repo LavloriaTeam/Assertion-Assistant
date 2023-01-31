@@ -12,6 +12,7 @@ using Assertion_Assistant.Translations;
 using System.IO;
 using System.Diagnostics;
 using Assertion_Assistant.JsonData;
+using Assertion_Assistant.TechClasses;
 
 namespace Assertion_Assistant
 {
@@ -24,7 +25,8 @@ namespace Assertion_Assistant
 
         void WelcomeForm_Load(object sender, EventArgs e)
         {
-
+            CommandLineInput cml = new CommandLineInput();
+            cml.CheckCmd();
         }
 
         void button2_Click(object sender, EventArgs e)
